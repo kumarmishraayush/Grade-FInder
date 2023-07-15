@@ -1,0 +1,40 @@
+.container{
+    height: 500px;
+    background-color: aliceblue;
+    width: 400px;
+    border-style: solid;
+    border-color: black;
+    margin: auto;
+    padding: auto;
+    border-radius: 20px;
+}
+.main
+{
+     background-color: gray;
+     border-radius: 50px;
+}
+
+h1{
+    text-align: center;
+}
+h2{
+    margin-left: 30px;
+}
+.field
+{   height: 50px;
+    width: 320px;
+    margin-left: 30px;
+    font-size: 200%;
+}
+#output
+{
+    font-size: 200%;
+     
+    height: 50px;
+    width: 320px;
+    margin-left: 30px;
+    font-size: 180%;
+    border-style: solid;
+    border-width: .4px;
+    border-color: black;
+}

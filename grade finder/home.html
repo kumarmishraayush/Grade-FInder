@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+     
+    <title>Home</title>
+</head>
+<body>
+    <h1>
+        Simple Grade Finder
+    </h1>
+    <div class="main">
+    <div class="container">
+        <h1>Grade System</h1>
+        <h2> Total Marks</h2>
+        <input type="text" class="field" onkeyup="run()" id="totalmarks">
+        <h2>
+            Obtained Marks
+        </h2>
+        <input type="text" class="field" onkeyup="run()" id="obtainedmarks">
+        <h2>
+            Grade
+        </h2>
+        <div class="result" id="output">
+
+        </div>
+        
+    </div>
+</div>
+<h1>
+    Ayush
+</h1>
+
+<script>
+    function run()
+    {
+        let totalMarks = document.getElementById("totalmarks").value;
+        let obtainedMarks = document.getElementById("obtainedmarks").value;
+         
+
+       
+         
+         
+        console.log(totalMarks);
+        console.log(obtainedMarks);
+
+        let x =Grade(totalMarks , obtainedMarks);
+
+        function Grade(totalMarks , obtainedMarks)
+        {
+            let ans = parseFloat((obtainedMarks/totalMarks)*100);
+            if(ans >= 91)
+            {
+                return "A1       Extra Ordinary";
+            }
+            if(ans >= 81 )
+            {
+                return "A2       Excellent**";
+            }
+            if(ans >= 71   )
+            {
+                return "B1        Very Good";
+            }
+            if(ans >= 61 )
+            {
+                return "B2        Good";
+            }
+            if(ans >= 51 )
+            {
+                return "C1        Medium";
+            }
+            if(ans >= 41 )
+            {
+                return "C2        Average";
+            }
+            if(ans >= 31)
+            {
+                return "D         Week";
+            }
+            if(ans >= 21)
+            {
+                return "E1        Poor";
+            }
+            if(ans < 20 && ans > 0)
+            {
+                return "E2        Very Poor";
+            }
+             
+            else{
+                return "Dono box bhariye please";
+            }
+             
+        }
+
+        document.getElementById('output').innerHTML = "\t" + x;
+    }  
+</script>
+</body>
+</html>
